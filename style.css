@@ -1,0 +1,46 @@
+#title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#description {
+    text-align: center;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    text-align: right;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+}
+
+#inside-nav {
+    display: block;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+}
+
+li a: :hover {
+    background-color: #555;
+    color: white;
+}
+
+.in-box {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    border: 10px goldenrod;
+    border-radius: 25px;
+    margin: 0px;
+}
+
+.list-box {
+    list-style-type: none;
+}
