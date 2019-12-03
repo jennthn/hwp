@@ -9,3 +9,15 @@ $(document).ready(function() {
         $('section').toggle("slide");
     });
   });
+
+$(document).ready(() => {
+    $("#pizza").click(() => {
+        $(".pizza").toggle("slide"); 
+    });
+});
+
+$(document).ready(() => {
+    $('#combos').click(() => {
+        $(".combo").toggle("slide"); 
+    });
+});

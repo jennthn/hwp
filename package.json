@@ -1,0 +1,25 @@
+{
+  "name": "hwp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennthn/hwp.git"
+  },
+  "author": "Jennifer Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jennthn/hwp/issues"
+  },
+  "homepage": "https://github.com/jennthn/hwp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.7.1",
+    "ejs-lint": "^0.3.0",
+    "express": "^4.17.1"
+  }
+}
