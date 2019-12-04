@@ -1,13 +1,13 @@
 <% include partials/header %>
-<div class=" pizza container-fluid">
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-8">
-            <table id="pizza-table">
+            <table class="table-borderless table-sm">
                 <tr>
-                    <th>Toppings</th>
-                    <th>Medium 10"</th>
-                    <th>Large 12"</th>
-                    <th>X-Large 14"</th>
+                    <th scope="col">Toppings</th>
+                    <th scope="col">Medium 10"</th>
+                    <th scope="col">Large 12"</th>
+                    <th scope="col">X-Large 14"</th>
                 </tr>    
                 <tr>
                     <td>
@@ -122,9 +122,9 @@
             <table id="pizza-table">
                 <caption>Extra Toppings</caption>
                 <tr>
-                    <th>Medium 10"</th>
-                    <th>Large 12"</th>
-                    <th>X-Large 14"</th>
+                    <th scope="col">Medium 10"</th>
+                    <th scope="col">Large 12"</th>
+                    <th scope="col">X-Large 14"</th>
                 </tr>
                 <tr>
                     <td>$2.00</td>
@@ -135,147 +135,151 @@
         </div>
     </div>
 </div>
-<div>
-    <table id="pizza-table">
-        <tr>
-            <th>Specialty Pizza</th>
-            <th>Medium 10"</th>
-            <th>Large 12"</th>
-            <th>X-Large 14"</th>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Donair Pizza</dt>
-                    <dd>Donair meat, mushroom, onion, & fresh tomatoes</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$17.75</td>
-            <td>$22.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Vegetarian Special</dt>
-                    <dd>Mushroom, onion, green pepper, pineapple, black olives, & fresh tomatoes</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$18.95</td>
-            <td>$22.45</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Hollywood Seafood</dt>
-                    <dd>Shrimp, scallops, & crab meat</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$17.75</td>
-            <td>$22.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Hollywood Special</dt>
-                    <dd>Mushroom, pepperoni, salami, ham, onion, green pepper, pineapple, black olives, & bacon</dd>
-                </dl>
-            </td>
-            <td>$13.95</td>
-            <td>$19.95</td>
-            <td>$$25.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Hollywood Greek Pizza</dt>
-                    <dd>Beef, mushroom, onion, green pepper, black olives, & feta cheese</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$18.75</td>
-            <td>$23.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Meat Lover Pizza</dt>
-                    <dd>Beef, pepperoni, salami, ham, & bacon</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$18.75</td>
-            <td>$23.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Hawaiian Chicken</dt>
-                    <dd>Ham, pinapple, & chicken</dd>
-                </dl>
-            </td>
-            <td>$12.95</td>
-            <td>$17.25</td>
-            <td>$19.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Chicken Deluxe</dt>
-                    <dd>Chicken, mushroom, green pepper, onion</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$18.75</td>
-            <td>$20.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Mexican Fiesta</dt>
-                    <dd>Beef, green pepper, onion, japeleno, fresh tomoatoes (served with a side of sour cream)</dd>
-                </dl>
-            </td>
-            <td>$13.45</td>
-            <td>$18.75</td>
-            <td>$22.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Canadian Pizza</dt>
-                    <dd>Pepperoni, mushroom, salami, & bacon</dd>
-                </dl>
-            </td>
-            <td>$12.95</td>
-            <td>$16.25</td>
-            <td>$18.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Spinach Pizza</dt>
-                    <dd>Spinach, mushroom, onion, & feta cheese</dd>
-                </dl>
-            </td>
-            <td>$12.95</td>
-            <td>$16.25</td>
-            <td>$18.95</td>
-        </tr>
-        <tr>
-            <td>
-                <dl>
-                    <dt>Tuna Fiesta</dt>
-                    <dd>Tuna, bacon, onion, green pepper, & special sauce</dd>
-                </dl>
-            </td>
-            <td>$12.95</td>
-            <td>$16.25</td>
-            <td>$18.95</td>
-        </tr>
-    </table>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <table class="table-borderless table-sm">
+                <tr>
+                    <th>Specialty Pizza</th>
+                    <th>Medium 10"</th>
+                    <th>Large 12"</th>
+                    <th>X-Large 14"</th>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Donair Pizza</dt>
+                            <dd>Donair meat, mushroom, onion, & fresh tomatoes</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$17.75</td>
+                    <td>$22.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Vegetarian Special</dt>
+                            <dd>Mushroom, onion, green pepper, pineapple, black olives, & fresh tomatoes</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$18.95</td>
+                    <td>$22.45</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Hollywood Seafood</dt>
+                            <dd>Shrimp, scallops, & crab meat</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$17.75</td>
+                    <td>$22.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Hollywood Special</dt>
+                            <dd>Mushroom, pepperoni, salami, ham, onion, green pepper, pineapple, black olives, & bacon</dd>
+                        </dl>
+                    </td>
+                    <td>$13.95</td>
+                    <td>$19.95</td>
+                    <td>$$25.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Hollywood Greek Pizza</dt>
+                            <dd>Beef, mushroom, onion, green pepper, black olives, & feta cheese</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$18.75</td>
+                    <td>$23.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Meat Lover Pizza</dt>
+                            <dd>Beef, pepperoni, salami, ham, & bacon</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$18.75</td>
+                    <td>$23.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Hawaiian Chicken</dt>
+                            <dd>Ham, pinapple, & chicken</dd>
+                        </dl>
+                    </td>
+                    <td>$12.95</td>
+                    <td>$17.25</td>
+                    <td>$19.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Chicken Deluxe</dt>
+                            <dd>Chicken, mushroom, green pepper, onion</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$18.75</td>
+                    <td>$20.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Mexican Fiesta</dt>
+                            <dd>Beef, green pepper, onion, japeleno, fresh tomoatoes (served with a side of sour cream)</dd>
+                        </dl>
+                    </td>
+                    <td>$13.45</td>
+                    <td>$18.75</td>
+                    <td>$22.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Canadian Pizza</dt>
+                            <dd>Pepperoni, mushroom, salami, & bacon</dd>
+                        </dl>
+                    </td>
+                    <td>$12.95</td>
+                    <td>$16.25</td>
+                    <td>$18.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Spinach Pizza</dt>
+                            <dd>Spinach, mushroom, onion, & feta cheese</dd>
+                        </dl>
+                    </td>
+                    <td>$12.95</td>
+                    <td>$16.25</td>
+                    <td>$18.95</td>
+                </tr>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Tuna Fiesta</dt>
+                            <dd>Tuna, bacon, onion, green pepper, & special sauce</dd>
+                        </dl>
+                    </td>
+                    <td>$12.95</td>
+                    <td>$16.25</td>
+                    <td>$18.95</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </div>
 
 <% include partials/footer %>
