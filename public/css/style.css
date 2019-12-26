@@ -25,8 +25,8 @@
 } 
 
 .navbar {
-    /*display: flex;
-    justify-content: flex-end;*/
+    /* display: flex;
+    justify-content: flex-end; */
     background-color: transparent;
 } 
 
@@ -54,14 +54,20 @@
     padding: 1.2rem;
 }
 
-#description {
+@media screen and (max-width: 600px) {
+    #contact {
+        visibility: hidden;
+    }
+}
+
+.description {
     position: absolute;
     bottom: 0;
     left: 0;
     padding: 1.2rem;
 }
 
-#phone {
+.phone {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -72,6 +78,16 @@ div a {
     color: black;
     text-decoration: none; 
     background-color: none;
+}
+
+@media screen and (min-width: 600px) {
+    #mobile-contact {
+      visibility: hidden;
+    }
+}
+
+.col-xs-6 {
+    background-color: white;
 }
 
 .pizza {
@@ -87,6 +103,13 @@ div a {
 
 .table-borderless {
     margin-top: 1.8em;
+    padding: 2em;
+}
+
+table {
+    background-color: #ffe6e6;
+    border-radius: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 table ul {
@@ -162,3 +185,6 @@ table ul {
     text-align: center;
 }
 
+.price {
+    text-align: right;
+}

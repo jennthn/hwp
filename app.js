@@ -15,8 +15,8 @@ app.get("/pizza", (req, res) => {
     res.render("pizza");
 });
 
-app.get("/donair&sub", (req, res) => {
-    res.render("doanir");
+app.get("/donairs", (req, res) => {
+    res.render("donair");
 });
 
 app.get("/deals", (req, res) => {
@@ -25,6 +25,14 @@ app.get("/deals", (req, res) => {
 
 app.get("/sides", (req, res) => {
     res.render("sides");
+});
+
+app.get("/contact", (req, res) => {
+    res.render("contact");
+});
+
+app.get("/login", (req, res) => {
+    res.render("login");
 });
 
 app.listen(3000, () => {
