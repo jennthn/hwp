@@ -1,0 +1,102 @@
+.contact {
+  background-color: $color-primary;
+  padding: 0 1rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: black;
+    text-decoration: none; 
+    background-color: none;
+  }
+
+  &__description {
+    align-self: flex-start;
+
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
+
+    // &--mobile {
+    //   background-color: #fff;
+
+    //   @media screen and (min-width: $bp-small) {
+    //     visibility: hidden;
+    //     font-size: 2rem;
+    //   }
+
+    //   @media screen and (max-width: $bp-small) {
+    //     visibility: visible;
+    //     padding: 0 1rem 1rem 1rem;
+    //   }
+
+    // }
+  }
+
+  &__phone {
+    align-self: flex-end;
+
+    @media screen and (max-width: $bp-small) {
+      display: none;
+    }
+
+    // &--mobile {
+    //   background-color: #fff;
+
+    //   @media screen and (min-width: $bp-small) {
+    //     visibility: hidden;
+    //   }
+
+    //   @media screen and (max-width: $bp-small) {
+    //     visibility: visible;
+    //     padding: 0 1rem 1rem 1rem;
+    //   }
+    // }
+
+  }
+
+  &__mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    grid-column-gap: 4rem;
+
+    padding: 1rem;
+    background-color: #fff;
+
+    @media screen and (min-width: $bp-small) {
+      display: none;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      visibility: visible;
+      padding: 0 1rem 1rem 1rem;
+      font-family: 'Open Sans Condensed', sans-serif;
+
+    }
+    
+
+    &--description {
+      justify-self: center;
+      grid-column: 1 / 2;
+    }
+
+    &--phone {
+      justify-self: center;
+      grid-column: 2 / -1;
+    }
+  }
+}
+
+// &__description {
+//   //   position: absolute;
+//   //   bottom: 0;
+//   //   left: 0;
+//   //   padding: 2rem;
+//   // }
+
+//   &__phone {
+//     // position: absolute;
+//     // bottom: 0;
+//     // right: 0;
+//     // padding: 2rem;
+//   }

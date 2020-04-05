@@ -1,0 +1,150 @@
+// DEALS
+.combo {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
+  grid-gap: 1rem;
+  align-content: center;
+  transition: all .2s;
+
+  div {
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 3px 7px 6px #888888;
+    }
+  }
+
+  &__xlarge {
+    /*grid-row: 3 / 4;
+    grid-column: 1 / 2;*/
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  p {
+    font-family: 'Slabo 27px', serif;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  li {
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+}
+
+
+// PIZZA
+.col-xs-6 {
+  background-color: white;
+}
+
+.pizza {
+  background-color: #F0F8FF;
+  text-align: center;
+  padding: 10rem 2rem;
+  display: none;
+}
+
+.pizza li {
+  list-style-type: none;
+}
+
+.table-borderless {
+  margin-top: 1.8em;
+  padding: 2em;
+}
+
+table {
+  background-color: #ffe6e6;
+  border-radius: 1.2em;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+table ul {
+  list-style-type: none;
+}
+
+#pizza-table {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;*/
+  max-width: 128rem;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  margin-top: 1.8em;
+  border: 1px solid black;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 1.5rem;
+}
+
+#pizza-table th, td {
+  padding: 1.5rem;
+}
+
+.pizza-header {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: lightpink;
+}
+
+.menu-block {
+  border: 2rem green;
+  outline: navy;
+  padding: 5rem;
+  margin: auto;
+  display: block;
+}    
+
+.title-wrapper {
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+.price {
+  text-align: right;
+}
+
+// .donairpg {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+
+// DONAIR
+.donair {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__description {
+    text-align: center;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 5rem;
+  }
+
+  &__info {
+    padding-bottom: .5rem;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+}
+
